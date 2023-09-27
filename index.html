@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create and Delete Tweets</title>
+    <style>
+        /* Add your CSS styles here for styling your UI */
+    </style>
+</head>
+<body>
+    <h1>Create and Delete Tweets</h1>
+
+    <form action="/create_tweet" method="POST">
+        <label for="tweet_text">Enter your tweet:</label>
+        <input type="text" id="tweet_text" name="tweet_text" placeholder="What's happening?" required>
+        <button type="submit">Create Tweet</button>
+    </form>
+
+    <form action="/delete_tweet" method="POST">
+        <label for="tweet_id">Enter tweet ID to delete:</label>
+        <input type="text" id="tweet_id" name="tweet_id" placeholder="Enter Tweet ID" required>
+        <button type="submit">Delete Tweet</button>
+    </form>
+
+    <hr>
+
+    <h2>Your Tweets</h2>
+    <ul>
+        <!-- Display a list of tweets here -->
+    </ul>
+</body>
+</html>
